@@ -1,0 +1,116 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+body {
+    font-family: 'Barlow Semi Condensed';
+    background: hsl(210, 46%, 95%);
+}
+.boxc {
+    border: 0 solid;
+    border-radius: 8px;
+    margin: 12px 12px;
+    padding: 20px;
+}
+#header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+p {
+    color: hsl(0, 0%, 81%);
+    opacity: 0.7;
+}
+h3, #name, #skill {
+    color: hsl(210, 46%, 95%);
+}
+
+h3 {
+    margin-bottom:15px;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+#name {
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+#skill {
+    opacity: 0.5;
+}
+
+#ppic {
+    width: 40px;
+    height: 40px;
+    border: 2px solid hsl(0, 0%, 81%);
+    border-radius: 50%;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    margin-right:15px;
+}
+
+#ppic img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+}
+
+#cont-3 #name, #cont-5 #name,
+#cont-3 #skill, #cont-5 #skill,
+#cont-3 h3, #cont-5 h3,
+#cont-3 p, #cont-5 p {
+    color: hsl(217, 19%, 35%);
+}
+#cont-3 #skill, #cont-5 #skill {
+    opacity: 0.5;
+}
+
+#cont-3 p, #cont-5 p {
+    opacity: 0.7;
+}
+
+    #cont-1 {
+    background: hsl(263, 55%, 52%);
+}
+
+#cont-2 {
+    background: hsl(217, 19%, 35%);
+}
+
+#cont-3, #cont-5 {
+    background: hsl(0, 0%, 100%);
+}
+
+#cont-4 {
+    background: hsl(219, 29%, 14%);
+}
+
+
+@media(min-width: 576px){
+    #main-container, #main-left, #mtop, #mbottom{
+        display: flex;
+    }
+    #mtop, #mbottom {
+        flex-basis: 50%;
+    }
+    #main-left {
+        flex-direction:column;
+        flex-basis: 80%;
+    }
+    #cont-5 {
+        flex-basis: 20%;
+    }
+    #cont-1, #cont4 {
+        flex-basis: 75%;
+    }
+    #cont-2, #cont3 {
+        flex-basis: 25%;
+    }
+    #main-container{
+        max-width: 1440px;
+    }
+}
